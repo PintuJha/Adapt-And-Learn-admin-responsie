@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adapt-And-Learn-admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- --------HEADER CODE START----------- -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <div class="header_logo">
+                        <a href="index.html"><img src="assets/img/Logo 1.png"></a>
+                    </div>
+                    <button class="navbar-toggler my-2" id="navbarSideCollapse" type="button"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse justify-content-center" id="navbarSideCollapse">
+                        <ul class="navbar-nav p-3 p-md-0">
+                            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="question-bank.html">Question Bank</a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="tests.html">Tests</a> </li>
+                            <li class="nav-item dropdown ktm-mega-menu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                                <div class="dropdown-menu mega-menu rounded-0 border-0 shadow-sm p-3">
+                                    <div class="drop_down_mega_menu">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Skills</a></li>
+                                                        <li><a href="javascript:void(0);">Domain based Results</a></li>
+                                                        <li><a href="javascript:void(0);">Results</a></li>
+                                                        <li><a href="javascript:void(0);">Single File Test Reports</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">Job Description Management</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Cluster Management</a></li>
+                                                        <li><a href="javascript:void(0);">Modules Management</a></li>
+                                                        <li><a href="javascript:void(0);">Skill based Reports</a></li>
+                                                        <li><a href="javascript:void(0);">Test Links Management</a></li>
+                                                        <li><a href="javascript:void(0);">Test Domain Attemps
+                                                                Mangement</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Multi-file Test Results</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">License Management</a></li>
+                                                        <li><a href="javascript:void(0);">Recomm Settings</a></li>
+                                                        <li><a href="javascript:void(0);">LMS Admin Users</a></li>
+                                                        <li><a href="javascript:void(0);">Schedule Management</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_profile">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle profile_box" data-toggle="dropdown">
+                                <div class="media">
+                                    <img src="assets/img/profile.png" alt="profile" class="rounded">
+                                    <div class="media-body">
+                                        <h4>Anubhav Shah</h4>
+                                        <p>Mumbai, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">Dashboard</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- --------HEADER CODE END----------- -->
+
+
+    <section class="qb_section Test_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="question_bank_heading">
+                        <h3>Create New Test</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="test_tab_section">
+                        <ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-Set_your_Test-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Set_your_Test" type="button" role="tab"
+                                    aria-controls="pills-Set_your_Test" aria-selected="true">
+                                    <div class="flex">
+                                        <div class="left_box">
+                                            <i class="fa-solid fa-file-lines"></i><br>
+                                            Set your Test
+                                        </div>
+                                        <div class="right_box">
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Add_Questions-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Add_Questions" type="button" role="tab"
+                                    aria-controls="pills-Add_Questions" aria-selected="false">
+                                    <div class="flex">
+                                        <div class="left_box">
+                                            <i class="fa-solid fa-file-medical"></i><br>
+                                            Add Questions
+                                        </div>
+                                        <div class="right_box">
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Add_Candidates-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Add_Candidates" type="button" role="tab"
+                                    aria-controls="pills-Add_Candidates" aria-selected="false">
+                                    <div class="flex">
+                                        <div class="left_box">
+                                            <i class="fa-solid fa-users"></i><br>
+                                            Add Candidates
+                                        </div>
+                                        <div class="right_box">
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Send_Invitation-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Send_Invitation" type="button" role="tab"
+                                    aria-controls="pills-Send_Invitation" aria-selected="false">
+                                    <div class="flex1">
+                                        <div class="left_box">
+                                            <i class="fa-solid fa-paper-plane"></i><br>
+                                            Send Invitation
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content tab_con_box" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-Set_your_Test" role="tabpanel"
+                                aria-labelledby="pills-Set_your_Test-tab">
+                                <div class="Set_your_Test_box">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-8">
+                                                <div class="Set_your_Test_left_box">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Programing
+                                                                        Language</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="Set_your_Test_left_box_field1">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label"></label>
+                                                                    <div class="flex-box">
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="FullstackTest" name="option1"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="FullstackTest">Fullstack
+                                                                                Test</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest">Shuffle Test</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Programing
+                                                                        Language</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Image URL for
+                                                                        Test</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text"
+                                                                        placeholder="https://452.3697-lorem ipsum dolor">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Select
+                                                                        Skills</label>
+                                                                    <textarea class="form-control" rows="5" id="comment"
+                                                                        name="text"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text"
+                                                                        class="form-label">Duration</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Pass
+                                                                        Percentage</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="Set_your_Test_left_box">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text"
+                                                                        class="form-label">Category</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Sub
+                                                                        Category</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Category of Sub
+                                                                        Category</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text"
+                                                                        placeholder="Choose category of a sub category">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Select Test
+                                                                        Type</label>
+                                                                    <select class="form-select">
+                                                                        <option>Select</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Select Test
+                                                                        Language</label>
+                                                                    <select class="form-select">
+                                                                        <option>Select</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Conducted
+                                                                        By</label>
+                                                                    <select class="form-select">
+                                                                        <option>Select</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="Set_your_Test_left_box">
+                                                    <p><b>Notification & Messages</b></p>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Users see this
+                                                                        text just before they begin the exam</label>
+                                                                    <textarea class="form-control" rows="5" id="comment"
+                                                                        name="text"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="Set_your_Test_left_box">
+                                                    <p><b>&nbsp</b></p>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Shown to the
+                                                                        user if they pass the exam. A copy is also sent
+                                                                        via email</label>
+                                                                    <textarea class="form-control" rows="5" id="comment"
+                                                                        name="text"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="Set_your_Test_left_box">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field1">
+                                                                <div class="">
+                                                                    <label for="text" class="form-label">Displayed upon
+                                                                        exam completion and email communications
+                                                                        relating to the exam</label>
+                                                                    <div class="flex-box1">
+                                                                        <div class="form-check form-check-label">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="FullstackTest1" name="option1"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="FullstackTest1">Send Result to
+                                                                                Student's Email</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-label">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest1" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest1">Share Recommendation
+                                                                                Engine by Email</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest2" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest2">Display Justification
+                                                                                for Answers</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest3" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest3">Confidence Based
+                                                                                Assessment Flag</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest4" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest4">Is the test for
+                                                                                Leoforce?</label>
+                                                                        </div>
+
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest5" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest5">Is the test based on
+                                                                                new UI?</label>
+                                                                        </div>
+
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest6" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest6">Display result to
+                                                                                student</label>
+                                                                        </div>
+
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="ShuffleTest7" name="option2"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="ShuffleTest7">Send Result
+                                                                                to</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="Set_your_Test_left_box">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field1">
+                                                                <div class="">
+                                                                    <label for="text" class="form-label">Protocol
+                                                                        Setting
+                                                                    </label>
+                                                                    <div class="flex-box1">
+                                                                        <div class="form-check form-check-label">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input"
+                                                                                id="FullstackTest11" name="option1"
+                                                                                value="something">
+                                                                            <label class="form-check-label"
+                                                                                for="FullstackTest11">Allow webcam
+                                                                                proctoring</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="question_save text-center">
+                                                    <button class="cancle_btn">Cancel</button>
+                                                    <button class="save_btn">Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-Add_Questions" role="tabpanel"
+                                aria-labelledby="pills-Add_Questions-tab">
+                                <div class="Set_your_Test_box">
+                                    <div class="question_bank_sec mb-4">
+                                        <div class="search_box justify-content-center">
+                                            <div class="input_field">
+                                                <input type="text" class="text_search" placeholder="Search Questions">
+                                            </div>
+                                            <div class="search_btn">
+                                                <button class="custom_btn">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-8">
+                                            <div class="question_bank_sec Add_Sections_box">
+                                                <h3>Add Sections</h3>
+                                                <div class="ques_box">
+                                                    <div class="row">
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Programing
+                                                                        Language</label>
+                                                                    <input type="text" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Question
+                                                                        Category</label>
+                                                                    <div class="select_question">
+                                                                        <nav class="navecation">
+                                                                            <ul id="navi">
+                                                                                <li><a class="menu active">Apptitude</a>
+                                                                                </li>
+                                                                                <li><a class="menu">Logical Reasoning
+                                                                                    </a></li>
+                                                                                <li><a class="menu">Reasoning</a></li>
+                                                                                <li><a class="menu">HR</a></li>
+                                                                                <li><a class="menu">Java Script</a></li>
+                                                                                <li><a class="menu">Lorem ipsumdolor</a>
+                                                                                </li>
+                                                                                <li><a class="menu">Lorem</a></li>
+                                                                                <li><a class="menu">Lorem ipsum
+                                                                                        dolor</a></li>
+                                                                            </ul>
+                                                                        </nav>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="Set_your_Test_left_box_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text"
+                                                                        class="form-label">Questions</label>
+                                                                    <div class="que_card_box">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 mb-4">
+                                                                                <div class="que_sec">
+                                                                                    <div class="paragraph">
+                                                                                        <p>Read each definition and all
+                                                                                            four choices carefully, and
+                                                                                            find
+                                                                                            the answer that provides the
+                                                                                            best example of the given
+                                                                                            definition. Applying for
+                                                                                            Seasonal Employment occurs
+                                                                                            when
+                                                                                            a person requests to be
+                                                                                            considered for a job that is
+                                                                                            dependent on a particular
+                                                                                            season or time of year. Whic
+                                                                                            situation below is the best
+                                                                                            example of Applying for
+                                                                                            Seasonal
+                                                                                            Employment?</p>
+                                                                                    </div>
+                                                                                    <div class="que_footer">
+                                                                                        <div class="left_sec">
+                                                                                            <p>Apptitude / Logical
+                                                                                                Reasoning/Reasoning</p>
+                                                                                            <div class="flex">
+                                                                                                <p>Difficulty:
+                                                                                                    <b>Easy</b></p>
+                                                                                                <p>Weight: <b>1</b></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="right_sec">
+                                                                                            <a
+                                                                                                href="javascript:void(0);"><img
+                                                                                                    src="assets/img/Add.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-12">
+                                                                                <div class="Save_Section text-center">
+                                                                                    <button class="save_btn">Save
+                                                                                        Section</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <div class="question_filter All_Sections">
+                                                <div class="filter_heading">
+                                                    <h3>All Sections</h3>
+                                                </div>
+                                                <div class="question_type_sec mb-4">
+                                                    <div class="flex">
+                                                        <div class="question_type_heading">
+                                                            <p><b>Question Type</b></p>
+                                                            <p>12 questions</p>
+                                                        </div>
+                                                        <div class="delete">
+                                                            <a href="javascript:void()">
+                                                                <img src="assets/img/delete.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="question_type_sec mb-4">
+                                                    <div class="flex">
+                                                        <div class="question_type_heading">
+                                                            <p><b>Question Type</b></p>
+                                                            <p>12 questions</p>
+                                                        </div>
+                                                        <div class="delete">
+                                                            <a href="javascript:void()">
+                                                                <img src="assets/img/delete.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="question_type_sec mb-4">
+                                                    <div class="flex">
+                                                        <div class="question_type_heading">
+                                                            <p><b>Question Type</b></p>
+                                                            <p>12 questions</p>
+                                                        </div>
+                                                        <div class="delete">
+                                                            <a href="javascript:void()">
+                                                                <img src="assets/img/delete.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="question_type_sec mb-4">
+                                                    <div class="flex">
+                                                        <div class="question_type_heading">
+                                                            <p><b>Question Type</b></p>
+                                                            <p>12 questions</p>
+                                                        </div>
+                                                        <div class="delete">
+                                                            <a href="javascript:void()">
+                                                                <img src="assets/img/delete.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 mt-4">
+                                            <div class="question_save text-center">
+                                                <button class="cancle_btn">Cancel</button>
+                                                <button class="save_btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-Add_Candidates" role="tabpanel"
+                                aria-labelledby="pills-Add_Candidates-tab">
+                                <div class="Set_your_Test_box">
+                                    <div class="question_bank_sec mb-4">
+                                        <div class="search_box justify-content-center">
+                                            <div class="input_field">
+                                                <input type="text" class="text_search" placeholder="Search Questions">
+                                            </div>
+                                            <div class="search_btn">
+                                                <button class="custom_btn">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="question_bank_sec Add_Sections_box">
+                                                <h3>All Candidate</h3>
+
+                                                <div class="question_table">
+                                                    <div class="scroll_table">
+                                                    <table class="table table-borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Candidate Name</th>
+                                                                <th>mail id</th>
+                                                                <th>Department</th>
+                                                                <th>Group</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg1">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg2">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg3">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg1">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg2">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg3">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg1">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg2">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="Test_Takers">
+                                                                        <div class="profile_img profile_bg3">
+                                                                            <p><b>AR</b></p>
+                                                                        </div>
+                                                                        <div class="profile_name">
+                                                                            <p><b>Aashna Rehman</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>rehman_aashna@gmail.com</td>
+                                                                <td>Lorem ipsum dolor amet</td>
+                                                                <td>Lorem Ipsum</td>
+                                                                <td>
+                                                                    <div class="add_btn">
+                                                                        <button class="add">Add</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    </div>
+                                                    <div class="pagination_box mt-4">
+                                                        <div class="pagination">
+                                                            <button class="btn">
+                                                                <i class="fa-solid fa-chevron-left"></i>
+                                                            </button>
+                                                            <div class="pages">
+                                                                <a class="page active">1</a>
+                                                                <a class="page">2</a>
+                                                                <a class="page">3</a>
+                                                                <a class="page">...</a>
+                                                                <a class="page">9</a>
+                                                            </div>
+                                                            <button class="btn active">
+                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12 mt-3">
+                                            <div class="question_save text-center mt-4">
+                                                <button class="cancle_btn">Cancel</button>
+                                                <button class="save_btn">Next</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-Send_Invitation" role="tabpanel"
+                                aria-labelledby="pills-Send_Invitation-tab">
+                                <div class="Set_your_Test_box">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="question_bank_sec Add_Sections_box mt-4">
+                                                <h3 class="mt-4">Send Invitation</h3>
+                                                <div class="question_table_sec_box">
+                                                    <div class="question_table Send_Invitation">
+                                                        <div class="heading text-center">
+                                                            <h3>You are invited for the Test</h3>
+                                                        </div>
+                                                        <div class="invited_test">
+                                                            <p>Here are the test detsils:</p>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="invited_box">
+                                                                        <label>Test Name</label>
+                                                                        <p><b>Lorem ipsum dolor amet Demo Test 1.0</b>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="invited_box">
+                                                                        <label>Category Name</label>
+                                                                        <p><b>Aptitude/ General</b></p>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="col-md-6">
+                                                                    <div class="invited_box">
+                                                                        <label>Section Name</label>
+                                                                        <p><b>Lorem ipsum dolor</b></p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="invited_box">
+                                                                        <label>Duration</label>
+                                                                        <p><b>30 Mins</b></p>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="col-md-6">
+                                                                    <div class="invited_box">
+                                                                        <label>Attemps</label>
+                                                                        <p><b>10</b></p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="invited_box">
+                                                                        <label>Invited Candidates</label>
+                                                                        <p><b>20</b></p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-4">
+                                                        <div class="col-md-6 mt-3">
+                                                            <div class="Create_New_Question_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">Select Date</label>
+                                                                    <input type="date" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mt-3">
+                                                            <div class="Create_New_Question_field">
+                                                                <div class="mb-3">
+                                                                    <label for="text" class="form-label">&nbsp;</label>
+                                                                    <input type="date" class="form-control" id="text"
+                                                                        name="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12 mt-3">
+                                            <div class="question_save text-center mt-4">
+                                                <button class="cancle_btn">Cancel</button>
+                                                <button class="save_btn">Send Invitation</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------FOOTER CODE START----------- -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_box">
+                        <p>© Copyright 2022. All Rights Reserved by <a href="#">Cygone Tech Private Limited</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- --------FOOTER CODE END----------- -->
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

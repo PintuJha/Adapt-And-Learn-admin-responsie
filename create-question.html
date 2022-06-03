@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adapt-And-Learn-admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- --------HEADER CODE START----------- -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <div class="header_logo">
+                        <a href="index.html"><img src="assets/img/Logo 1.png"></a>
+                    </div>
+                    <button class="navbar-toggler my-2" id="navbarSideCollapse" type="button"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse justify-content-center" id="navbarSideCollapse">
+                        <ul class="navbar-nav p-3 p-md-0">
+                            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="question-bank.html">Question Bank</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="tests.html">Tests</a> </li>
+                            <li class="nav-item dropdown ktm-mega-menu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                                <div class="dropdown-menu mega-menu rounded-0 border-0 shadow-sm p-3">
+                                    <div class="drop_down_mega_menu">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Skills</a></li>
+                                                        <li><a href="javascript:void(0);">Domain based Results</a></li>
+                                                        <li><a href="javascript:void(0);">Results</a></li>
+                                                        <li><a href="javascript:void(0);">Single File Test Reports</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">Job Description Management</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Cluster Management</a></li>
+                                                        <li><a href="javascript:void(0);">Modules Management</a></li>
+                                                        <li><a href="javascript:void(0);">Skill based Reports</a></li>
+                                                        <li><a href="javascript:void(0);">Test Links Management</a></li>
+                                                        <li><a href="javascript:void(0);">Test Domain Attemps
+                                                                Mangement</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mega_menu_box">
+                                                    <p><b>Mega Menu</b></p>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Multi-file Test Results</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">License Management</a></li>
+                                                        <li><a href="javascript:void(0);">Recomm Settings</a></li>
+                                                        <li><a href="javascript:void(0);">LMS Admin Users</a></li>
+                                                        <li><a href="javascript:void(0);">Schedule Management</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_profile">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle profile_box" data-toggle="dropdown">
+                                <div class="media">
+                                    <img src="assets/img/profile.png" alt="profile" class="rounded">
+                                    <div class="media-body">
+                                        <h4>Anubhav Shah</h4>
+                                        <p>Mumbai, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">Dashboard</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- --------HEADER CODE END----------- -->
+
+
+    <section class="qb_section create_question_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="question_bank_heading">
+                        <h3>Create New Question</h3>
+                        <div class="question_btn">
+                            <button class="custom_btn mr-3"><img src="assets/img/img.png"> Add Image</button>
+                            <button class="custom_btn mr-3"><img src="assets/img/video.png"> Add Video</button>
+                            <button class="custom_btn" id="myButton1"><img src="assets/img/audio.png"> Add Audio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Create_New_Question_box">
+                <form>
+                <div class="row">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="Create_New_Question_form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Write a Question</label>
+                                                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="select" class="form-label">Difficulty Level</label>
+                                                <select class="form-select">
+                                                    <option>Select</option>
+                                                </select>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Question Type</label>
+                                                <select class="form-select">
+                                                    <option>Select</option>
+                                                </select>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Options</label>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input type="checkbox" value="">
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input type="checkbox" value="">
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input type="checkbox" value="">
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                                <div class="input-group multi_check_box">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input type="checkbox" value="">
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Justification for Answer</label>
+                                                <textarea class="form-control answer" rows="5" id="comment" name="text"></textarea>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="text" class="form-label">Programing Language</label>
+                                                <input type="text" class="form-control" id="text" name="text">
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="Create_New_Question_form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Choose categories for Question</label>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                         A.
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                           B.
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                                <div class="input-group multi_check_box mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                         C.
+                                                        </div>
+                                                    </div>
+                                                    <input class="form-control" type="text" value="">
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Constraints</label>
+                                                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="text" class="form-label">Question Weight</label>
+                                                <input type="text" class="form-control" id="text" name="text" placeholder="Enter a number between 1 to 10">
+                                              </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="comment" class="form-label">Instructions, If any</label>
+                                                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="text" class="form-label">Course Qualifier Description, if any</label>
+                                                <input type="text" class="form-control" id="text" name="text">
+                                              </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="text" class="form-label">Course Context, if any</label>
+                                                <input type="text" class="form-control" id="text" name="text">
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="Create_New_Question_field">
+                                            <div class="mb-3">
+                                                <label for="text" class="form-label">Weight for Course Context, if any</label>
+                                                <input type="text" class="form-control" id="text" name="text">
+                                              </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                          <div class="question_save text-center">
+                              <button class="cancle_btn">Cancel</button>
+                              <button class="save_btn">Save</button>
+                          </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- --------FOOTER CODE START----------- -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_box">
+                        <p>© Copyright 2022. All Rights Reserved by <a href="#">Cygone Tech Private Limited</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- --------FOOTER CODE END----------- -->
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

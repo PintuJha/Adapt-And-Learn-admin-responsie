@@ -1,0 +1,204 @@
+
+// ==========Header Code Start===========
+header {
+    .header {
+        background: $navbg;
+        box-shadow: $headershadow;
+        .header_profile {
+            .dropdown-menu {
+                top: 52px;
+                right: 0;
+                font-size: 14px;
+                color: $black;
+                background-color: $white;
+                border: 0px solid rgba(0, 0, 0, .15);
+                box-shadow: $dashbordshadow;
+                @include bd-radius(5px);
+                .dropdown-item.active,
+                .dropdown-item:active {
+                    background-color: $activebg;
+                }
+            }
+            .profile_box {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .media {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 15px;
+                    }
+                    .media-body {
+                        margin-right: 10px;
+
+                        h4 {
+                            margin: 0;
+                            font-size: 18px;
+                            font-weight: 500;
+
+                        }
+
+                        p {
+                            margin: 0px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            ul {
+                li {
+                    a.active {
+                        font-weight: 500 !important;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $black  !important;
+                        border-bottom: 3px solid $activebg;
+                    }
+                    a.nav-link {
+                        color: $headermenu !important;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: 25px 18px;
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            width: 13rem;
+        }
+        .mega-submenu {
+            left: 100%;
+            top: 0;
+            min-width: 25rem;
+        }
+        .ktm-mega-menu {
+            position: static;
+            .drop_down_mega_menu {
+                .mega_menu_box {
+                    p{
+                        color: $activebg;
+                        font-weight: 300;
+                    }
+                    ul {
+                        padding: 0px;
+                        margin: 0px;
+                        list-style-type: none;
+                        padding-inline-start: 10px;
+                        li{
+                            margin-bottom: 10px;
+                            a{
+                                color: $headermenu;
+                                text-decoration: none;
+                                font-size: 16px;
+                                transition: all 0.2s ease 0.3s;
+                                &:hover{
+                                    color:$black;
+                                    padding-left: 5px;
+                                  
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mega-menu {
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+        .dropdown-menu li {
+            position: relative;
+        }
+        .dropdown-menu .submenu {
+            display: none;
+            left: 100%;
+            top: 0;
+        }
+        .dropdown-menu>li:hover>.submenu,
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+    }
+}
+// ==========Header Code ENd===========
+@media (max-width: 991.98px) {
+header{
+    .header{
+    
+        .navbar-dark {
+            .navbar-toggler {
+                color: rgb(255 255 255 / 0%);
+                border-color: rgb(255 255 255 / 0%);
+            }
+            i.fa-solid.fa-bars {
+                color: #4f87bf;
+            }
+        }
+    }
+}
+	header .header .navbar-collapse ul li a.nav-link {
+		color: $navbg !important;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 8px 18px;
+	}
+	header .header .navbar-collapse ul li a.active {
+		font-weight: 500 !important;
+		font-size: 16px;
+		line-height: 24px;
+		color: $white  !important;
+		border-bottom: 0px solid #4782BC;
+	}
+	.offcanvas-collapse {
+		position: fixed;
+		top: 75px;
+		bottom: 0;
+		left: 100%;
+		width: 100%;
+		padding: 10px;
+		overflow-y: auto;
+		visibility: hidden;
+		background-color: $activebg;
+		transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        z-index: 99;
+		ul.navbar-nav.p-3.p-md-0 {
+			padding: 0px !important;
+		}
+	}
+	.offcanvas-collapse.open {
+		visibility: visible;
+		transform: translateX(-100%);
+        z-index: 99;
+	}
+}
+@media (max-width: 767.98px) {
+	header {
+		.header {
+			padding: 10px 0px;
+
+			.navbar-dark {
+                .navbar-toggler {
+                    color: rgb(255 255 255 / 0%);
+                    border-color: rgb(255 255 255 / 0%);
+                }
+                i.fa-solid.fa-bars {
+                    color: #4f87bf;
+                }
+			}
+			.header_profile {
+				display: none;
+			}
+		}
+	}
+
+   
+}

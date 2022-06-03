@@ -1,0 +1,15 @@
+footer {
+    background: $navbg;
+    padding: 10px 0px;
+    .footer_box {
+        text-align: center;
+        p{
+            margin: 0px;
+            font-size: 14px;
+            a{
+                color:$activebg;
+                text-decoration: none;
+            }
+        }
+    }
+}

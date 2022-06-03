@@ -1,0 +1,179 @@
+
+// ==========Section Code Start===========
+section {
+    padding: 55px 0px;
+    .section_heading {
+        margin-bottom: 25px;
+        h3 {
+            margin: 0px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .card_box_das {
+        .Coding_Question_box {
+            margin-top: 0;
+            box-shadow: $dashbordshadow;
+            padding: 15px;
+            @include bd-radius(20px);
+            .total_count {
+                h3 {
+                    margin: 18px 0px 0px 0px;
+                    font-weight: 500;
+                    font-size: 35px;
+                }
+            }
+
+            .coading_box {
+                display: flex;
+                align-items: center;
+                .img_file.new_bg1 {
+                    background: $boxfirst1;
+                }
+                .img_file.new_bg2 {
+                    background: $boxfirst2;
+                }
+                .img_file.new_bg3 {
+                    background: $boxfirst3;
+                }
+                .img_file.new_bg4 {
+                    background: $boxfirst4;
+                }
+                .img_file.new_bg5 {
+                    background: $boxfirst5;
+                }
+                .img_file {
+                    margin-right: 15px;
+                    width: 60px;
+                    height: 60px;
+                    @include bd-radius(14px);
+                    background: $boxfirst;
+                    text-align: center;
+                    line-height: 55px;
+                }
+
+                .text_coading {
+                    p {
+                        margin: 0px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 35px;
+                        margin-top: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .most_popular_das {
+        .Most_Frequent {
+            box-shadow: $dashbordshadow;
+            @include bd-radius(20px);
+            padding: 30px 25px;
+
+            h3 {
+                font-weight: 500;
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            .Test_Takers_box.Assessments {
+                .Test_Takers {
+                    display: block;
+                    .profile_name {
+                        p {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+            .Test_Takers_box {
+                background: $navbg;
+                @include bd-radius(18px);
+                padding: 15px;
+                margin-bottom: 20px;
+
+                .test_taken_total {
+                    p {
+                        margin: 10px 0px 0px 0px;
+                    }
+                }
+
+                .Test_Takers {
+                    display: flex;
+                    align-items: center;
+                    .profile_img.profile_bg1 {
+                        background: $boxfirst6;
+                    }
+                    .profile_img.profile_bg2 {
+                        background: $tablebuttonbg;
+                    }
+                    .profile_img.profile_bg3 {
+                        background: $boxfirst6;
+                    }
+                    .profile_img.profile_bg4 {
+                        background:$tablebuttonbg;
+                    }
+                    .profile_img {
+                        padding: 10px 15px;
+                        background: $condidateboxbg2;
+                        @include bd-radius(10px);
+                        margin-right: 15px;
+
+                        p {
+                            margin: 0px;
+                            color: $white;
+                        }
+                    }
+
+                    .profile_name {
+                        p {
+                            color: $black;
+                            font-weight: 500;
+                            font-size: 16px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .popular_skill_box {
+        background: $searchbg;
+        @include bd-radius(22px);
+        margin-bottom: 25px;
+        padding: 30px 25px 20px;
+        .cat_heading {
+            h3 {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 33px;
+                margin: 0px 0px 18px 0px;
+            }
+        }
+        .skill_cat_sec {
+            max-height: 440px;
+            overflow: auto;
+        .skill_cat_box {
+            background: $white;
+            padding: 15px;
+            @include bd-radius(18px);
+            margin-bottom: 20px;
+            p{
+                margin: 0px
+            }
+        }
+    }
+    }
+}
+
+// ==========Section Code End===========

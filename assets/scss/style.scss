@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Poppins:wght@200;300;400;500&display=swap');
+@import "core/mixin";
+@import "core/variable";
+@import "core/login";
+@import "core/header";
+@import "core/home";
+@import "core/questionbank";
+@import "core/footer";
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    background-color: $white;
+    color: $black;
+}
+
+
+section.qb_section.create_question_sec{
+    .question_save {
+        button.cancle_btn {
+            background: $white;
+            border: 1px solid $activebg;
+            @include bd-radius(14px);
+            padding: 12px 35px;
+            font-weight: 500;
+            font-size: 18px;
+            margin-right: 12px;
+            &:hover{
+                background:$loginbtnhover;
+                color: $white;
+            }
+        }
+        button.save_btn {
+            background: $activebg;
+           color: $white;
+           border: none;
+            @include bd-radius(14px);
+            padding: 12px 35px;
+            font-weight: 500;
+            font-size: 18px;
+            &:hover{
+                background:$loginbtnhover; 
+            }
+        }
+    }
+ .Create_New_Question_form{
+     .Create_New_Question_field{
+        label.form-label {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 33px;
+            color: $black;
+        }
+        textarea {
+            border: 1px solid $formboderbg; 
+            @include bd-radius(16px);
+            height: 150px;
+            resize: none;
+        }
+        textarea.answer {
+            height: 284px !important;
+        }
+        select.form-select {
+            border: 1px solid $formboderbg;
+            @include bd-radius(16px);
+            height: 55px;
+        }
+        input {
+            background: $white;
+            border: 1px solid $formboderbg;
+            @include bd-radius(16px);
+            height: 55px;
+        }
+        .form-control:focus {
+            border-color: $activebg;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+        }
+        .form-select:focus {
+            border-color: $activebg;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+        }
+         .multi_check_box{
+            input.form-control {
+                border-left: 0px;
+            }
+            .input-group-text {
+                border-radius: 16px 0px 0px 16px;
+                border-right: 0px !important;
+                background-color: $white;
+                border: 1px solid $formboderbg;
+                height: 55px;
+            }
+         }
+     }
+ }
+}
+
+
+section.Test_section{
+    .test_tab_section{
+        .tab_con_box{
+            .Set_your_Test_box {
+                margin-top: 30px;
+                .question_bank_sec.Add_Sections_box {
+                    .question_table {
+                        table.table.table-borderless {
+                            tbody {
+                                tr{
+                                    td{
+                                        padding: 18px 8px !important;
+                                        .add_btn {
+                                            button.add {
+                                                background: $tablebuttonbg;
+                                                border-radius: 8px;
+                                                border: none;
+                                                color: $white;
+                                                font-weight: 500;
+                                                font-size: 18px;
+                                                line-height: 27px;
+                                                padding: 4px 15px;
+                                            }
+                                        }
+                                        .Test_Takers {
+                                            display: flex;
+                                            align-items: center;
+                                            .profile_name p {
+                                                color: $black;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                margin: 0px;
+                                            }
+                                            .profile_img.profile_bg1{
+                                                background: $condidateboxbg2; 
+                                            }
+                                            .profile_img.profile_bg2{
+                                                background: $boxfirst2; 
+                                            }
+                                            .profile_img.profile_bg3{
+                                                background: $boxfirst1; 
+                                            }
+                                            .profile_img.profile_bg4{
+                                                background: $condidateboxbg2; 
+                                            }
+                                            .profile_img.profile_bg5{
+                                                background: $condidateboxbg2; 
+                                            }
+                                            .profile_img {
+                                                padding: 5px 15px;
+                                                background: $condidateboxbg1;
+                                                -webkit-border-radius: 10px;
+                                                -moz-border-radius: 10px;
+                                                border-radius: 10px;
+                                                margin-right: 15px;
+                                                p {
+                                                    margin: 0px;
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question_filter.All_Sections {
+                    margin-top: 25px;
+                    .question_type_sec {
+                        margin-top: 0px;
+                        background: $cardbg;
+                        border-radius: 16px;
+                        .flex {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .question_type_heading {
+                                p {
+                                    margin: 0px;
+                                    color: $white;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .filter_heading {
+                        h3 {
+                            font-weight: 600;
+                            font-size: 22px;
+                            margin-bottom: 18px;
+                        }
+                    }
+                }
+                .question_bank_sec.Add_Sections_box {
+                    .question_table_sec_box{
+                        width: 80%;
+                        margin: 40px auto 0px;
+                        .Create_New_Question_field {
+                            label.form-label {
+                                font-weight: 400;
+                                font-size: 17px;
+                                line-height: 33px;
+                                color: $black;
+                            }
+                            input{
+                                background: $white;
+                                border: 1px solid $formboderbg;
+                                border-radius: 16px;
+                                height: 55px;
+                                &:focus{
+                                    border-color: #4782BC;
+                                  outline: 0;
+                                    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+                                }
+                            }
+                        }
+                        .question_table.Send_Invitation {
+                            box-shadow: 0px 0px 8px rgb(193 193 193 / 35%);
+                            border-radius: 16px;
+                            padding: 25px;
+                        }
+                    }
+
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 22px;
+                        margin-bottom: 18px;
+                    }
+                    .ques_box {
+                        background: $white;
+                        border: 1px solid $formboderbg;
+                        @include bd-radius(16px);
+                        padding: 15px;
+                        .Set_your_Test_left_box_field {
+                            .que_card_box{
+                                .Save_Section{
+                                    margin-top: 15px;
+                                    button.save_btn {
+                                        background: $activebg;
+                                        color: $white;
+                                        border: none;
+                                        @include bd-radius(14px);
+                                        padding: 12px 35px;
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        &:hover{
+                                            background: $loginbtnhover;
+                                        }
+                                    }
+                                }
+                                .que_sec{
+                                    background: $white;
+                                    border: 1px solid $formboderbg;
+                                    @include bd-radius(16px);
+                                    .paragraph {
+                                        padding: 15px;
+                                        p {
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            margin: 0px;
+                                        }
+                                    }
+                                    .que_footer {
+                                        background: $cardfooterbg;
+                                        padding: 15px;
+                                        border-radius: 0px 0px 16px 16px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        .left_sec{
+                                            .flex {
+                                                display: flex;
+                                                align-items: center;
+                                                p{
+                                                    margin-right: 20px;
+                                                }
+                                            }
+                                            p {
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                margin: 0px;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                            .select_question{
+                                nav{
+                                    ul{
+                                        margin: 0px;
+                                        padding: 0;
+                                        li{
+                                            list-style: none;
+                                            display: inline-block;
+                                            padding-right: 20px;
+                                            margin: 12px 0px 20px;
+                                            a{
+                                                background: $white;
+                                                border: 1px solid $formboderbg;
+                                                @include bd-radius(12px);
+                                                text-decoration: none;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                color: $black;
+                                                padding: 10px 25px;
+                                                cursor: pointer;
+                                                &.active{
+                                                    background-color: $activebg;
+                                                    color: #fff;
+                                                    border: 1px solid $activebg;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                               
+                            }
+                            label.form-label {
+                                font-weight: 400;
+                                font-size: 17px;
+                                line-height: 33px;
+                                color: $black;
+                            }
+                            input {
+                                background: $white;
+                                border: 1px solid $formboderbg;
+                                @include bd-radius(16px);
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+                .question_bank_sec{
+                    .search_box.justify-content-center {
+                        .input_field {
+                            input.text_search {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .question_save {
+                    button.cancle_btn {
+                        background: $white;
+                        border: 1px solid $activebg;
+                        @include bd-radius(14px);
+                        padding: 12px 35px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        margin-right: 12px;
+                        &:hover{
+                            background:$loginbtnhover;
+                            color: $white;
+                        }
+                    }
+                    button.save_btn {
+                        background: $activebg;
+                       color: $white;
+                       border: none;
+                        @include bd-radius(14px);
+                        padding: 12px 35px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        &:hover{
+                            background:$loginbtnhover; 
+                        }
+                    }
+                }
+                .Set_your_Test_left_box {
+                    .Set_your_Test_left_box_field1{
+                        label.form-label {
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                        .flex-box1 {
+                            display: inherit;
+                            align-items: center;
+                            .form-check {
+                                line-height: 23px;
+                                width: 32.33%;
+                                display: inline-block;
+                                margin-bottom: 1rem!important;
+                            }
+                        }
+                        .flex-box {
+                            display: flex;
+                            align-items: center;
+                            .form-check {
+                                margin-right: 22px;
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                    .Set_your_Test_left_box_field {
+                        .form-control:focus {
+                            border-color: $activebg;
+                            outline: 0;
+                            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+                        }
+                        .form-select:focus {
+                            border-color: $activebg;
+                            outline: 0;
+                            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+                        }
+                      input {
+                            background: $white;
+                            border: 1px solid $formboderbg;
+                            @include bd-radius(16px);
+                            height: 55px;
+                        }
+
+                        textarea {
+                            border: 1px solid $formboderbg; 
+                            @include bd-radius(16px);
+                            height: 167px;
+                            resize: none;
+                        }
+                        select.form-select {
+                            border: 1px solid $formboderbg;
+                            @include bd-radius(16px);
+                            height: 55px;
+                        }
+
+
+                       label.form-label {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 33px;
+                        color: $black;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        ul.nav{
+          justify-content: space-between;
+          background: $activebg;
+          border-radius: 70px;
+          padding: 10px 45px;
+          li{
+              width: 25%;
+            .nav-link.active{
+                background: none;
+                color: $white;
+            }
+            button {
+                color: $tabdisactivecolor;
+                font-weight: 500;
+                font-size: 17px;
+                width: 100%;
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .left_box i {
+                        font-size: 24px;
+                    }
+                    .right_box i {
+                        font-size: 22px;
+                    }
+                }
+            }
+          }
+        }
+    }
+}
+
+
+
+
+
+
+
+@import "core/responsive";
